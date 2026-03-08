@@ -27,10 +27,13 @@ renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 controls = new PointerLockControls(camera,document.body);
-
+document.body.addEventListener("click",()=>{
+controls.lock();
+});
+  
 const instructions = document.getElementById("instructions");
 
-instructions.addEventListener("click",()=>{
+instructions.addEventListener("click",function(){
 controls.lock();
 });
 

@@ -1,0 +1,10 @@
+{
+"name": "berlin-ubahn-fps",
+"version": "1.0.0",
+"description": "FPS exploration of Berlin U-Bahn Station",
+"main": "index.html",
+"scripts": {
+"start": "serve"
+},
+"dependencies": {}
+}

@@ -1,7 +1,3 @@
-import * as THREE ...
-import { GLTFLoader }
-import { PointerLockControls }
-  
 let camera, scene, renderer, controls;
 let velocity = new THREE.Vector3();
 let direction = new THREE.Vector3();

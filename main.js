@@ -22,7 +22,7 @@ renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-controls = new THREE.PointerLockControls(camera,document.body);
+controls = new PointerLockControls(camera,document.body);
 document.body.addEventListener("click",()=>{
 controls.lock();
 });

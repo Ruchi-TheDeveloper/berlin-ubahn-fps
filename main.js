@@ -22,7 +22,7 @@ renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-controls = new PointerLockControls(camera,document.body);
+controls = new THREE.PointerLockControls(camera,document.body);
 document.body.addEventListener("click",()=>{
 controls.lock();
 });
@@ -49,7 +49,7 @@ const light = new THREE.HemisphereLight(0xffffff,0x444444);
 light.position.set(0,200,0);
 scene.add(light);
 
-const loader = new GLTFLoader();
+const loader = new THREE.GLTFLoader();
 
 loader.load("./models/berlin_station.glb",function(gltf){
 
